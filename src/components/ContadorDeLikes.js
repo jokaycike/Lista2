@@ -9,7 +9,7 @@ export default function ContadorDeLikes(){
             <TouchableOpacity style={styles.button} onPress={() => setlikes(likes+1)}>
                 <Text style={styles.text}>Deixe seu like 👍</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => setlikes(Math.max(0,likes-1))}>
+            <TouchableOpacity style={styles.button} onPress={() => setlikes(Math.min(0,likes-1))}>
                 <Text style={styles.text}>Deixe seu deslike 👎</Text>
             </TouchableOpacity>
         </View>
